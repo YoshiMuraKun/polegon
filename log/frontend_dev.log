@@ -1,0 +1,682 @@
+Jul 26 04:20:25 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jul 26 04:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:20:25 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jul 26 04:20:25 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+Jul 26 04:20:25 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+Jul 26 04:20:25 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+Jul 26 04:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:20:25 symfony [info] {sfWebDebugLogger} Configuration 296.93 ms (9)
+Jul 26 04:20:25 symfony [info] {sfWebDebugLogger} Factories 172.11 ms (1)
+Jul 26 04:20:25 symfony [info] {sfWebDebugLogger} Action "default/index" 0.24 ms (1)
+Jul 26 04:20:25 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 27.18 ms (1)
+Jul 26 04:20:25 symfony [info] {sfWebResponse} Send content (30104 o)
+Jul 26 04:50:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'Post',  'action' => 'index',)
+Jul 26 04:50:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:50:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:50:05 symfony [info] {PostActions} Call "PostActions->executeIndex()"
+Jul 26 04:50:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:50:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:50:05 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/Post/templates/indexSuccess.php"
+Jul 26 04:50:05 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:50:05 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:50:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:50:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:50:05 symfony [info] {sfWebDebugLogger} Configuration 267.04 ms (9)
+Jul 26 04:50:05 symfony [info] {sfWebDebugLogger} Factories 158.50 ms (1)
+Jul 26 04:50:05 symfony [info] {sfWebDebugLogger} Action "Post/index" 13.56 ms (1)
+Jul 26 04:50:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.35 ms (2)
+Jul 26 04:50:05 symfony [info] {sfWebDebugLogger} View "Success" for "Post/index" 28.06 ms (1)
+Jul 26 04:50:05 symfony [info] {sfWebResponse} Send content (31205 o)
+Jul 26 04:50:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:50:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:50:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:50:40 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:50:40 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, none given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:08 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:10 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:11 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:11 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:18 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:18 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:19 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:19 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:20 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:20 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:20 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:20 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:21 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:21 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:21 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:21 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:22 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:22 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 19 (Argument 1 passed to PostActions::executeIndex() must be an instance of sfWebRequest, string given, called in D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 16 and defined)
+Jul 26 04:51:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:43 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:43 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:43 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:43 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:43 symfony [info] {sfWebDebugLogger} Configuration 7.27 ms (9)
+Jul 26 04:51:43 symfony [info] {sfWebDebugLogger} Factories 20.80 ms (1)
+Jul 26 04:51:43 symfony [info] {sfWebDebugLogger} Action "post/test" 12.78 ms (1)
+Jul 26 04:51:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.36 ms (2)
+Jul 26 04:51:43 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.53 ms (1)
+Jul 26 04:51:43 symfony [info] {sfWebResponse} Send content (31054 o)
+Jul 26 04:51:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:44 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:44 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:44 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:44 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:44 symfony [info] {sfWebDebugLogger} Configuration 5.12 ms (9)
+Jul 26 04:51:44 symfony [info] {sfWebDebugLogger} Factories 16.90 ms (1)
+Jul 26 04:51:44 symfony [info] {sfWebDebugLogger} Action "post/test" 11.07 ms (1)
+Jul 26 04:51:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2)
+Jul 26 04:51:44 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.00 ms (1)
+Jul 26 04:51:44 symfony [info] {sfWebResponse} Send content (31053 o)
+Jul 26 04:51:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:45 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:45 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:45 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:45 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:45 symfony [info] {sfWebDebugLogger} Configuration 7.35 ms (9)
+Jul 26 04:51:45 symfony [info] {sfWebDebugLogger} Factories 21.44 ms (1)
+Jul 26 04:51:45 symfony [info] {sfWebDebugLogger} Action "post/test" 17.04 ms (1)
+Jul 26 04:51:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+Jul 26 04:51:45 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 8.85 ms (1)
+Jul 26 04:51:45 symfony [info] {sfWebResponse} Send content (31054 o)
+Jul 26 04:51:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:46 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Configuration 8.14 ms (9)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Factories 22.33 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Action "post/test" 12.08 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.33 ms (2)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 10.03 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send content (31023 o)
+Jul 26 04:51:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:46 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Configuration 6.32 ms (9)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Factories 63.41 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Action "post/test" 12.96 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.46 ms (2)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.69 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send content (31021 o)
+Jul 26 04:51:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:46 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Configuration 8.05 ms (9)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Factories 166.66 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Action "post/test" 17.25 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.50 ms (2)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 10.80 ms (1)
+Jul 26 04:51:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send content (31023 o)
+Jul 26 04:51:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:46 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Configuration 6.76 ms (9)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Factories 244.49 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Action "post/test" 12.23 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.32 ms (2)
+Jul 26 04:51:46 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.37 ms (1)
+Jul 26 04:51:46 symfony [info] {sfWebResponse} Send content (31021 o)
+Jul 26 04:51:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:47 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:47 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:47 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:47 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Configuration 6.81 ms (9)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Factories 292.93 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Action "post/test" 12.44 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.39 ms (2)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.54 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send content (31021 o)
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:47 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:47 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:47 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:47 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Configuration 8.06 ms (9)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Factories 322.87 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Action "post/test" 12.23 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.39 ms (2)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 10.10 ms (1)
+Jul 26 04:51:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send content (31023 o)
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:47 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:47 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:47 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:47 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Configuration 7.22 ms (9)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Factories 228.53 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Action "post/test" 13.35 ms (1)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+Jul 26 04:51:47 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 12.64 ms (1)
+Jul 26 04:51:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:47 symfony [info] {sfWebResponse} Send content (31023 o)
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:47 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:48 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:48 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:48 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Configuration 8.16 ms (9)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Factories 259.58 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Action "post/test" 18.43 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.34 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send content (31020 o)
+Jul 26 04:51:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:48 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:48 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:48 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:48 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Configuration 7.98 ms (9)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Factories 18.75 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Action "post/test" 12.14 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.74 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send content (31021 o)
+Jul 26 04:51:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:48 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:48 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:48 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:48 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Configuration 8.06 ms (9)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Factories 19.77 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Action "post/test" 12.70 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.35 ms (2)
+Jul 26 04:51:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.29 ms (1)
+Jul 26 04:51:48 symfony [info] {sfWebResponse} Send content (31022 o)
+Jul 26 04:51:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:49 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:49 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:49 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:49 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Configuration 8.75 ms (9)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Factories 26.47 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Action "post/test" 12.45 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.40 ms (2)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.49 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send content (31022 o)
+Jul 26 04:51:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:49 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:49 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:49 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:49 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Configuration 13.51 ms (9)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Factories 71.91 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Action "post/test" 19.62 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.48 ms (2)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 12.51 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send content (31024 o)
+Jul 26 04:51:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:49 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:49 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:49 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:49 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Configuration 8.04 ms (9)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Factories 171.47 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Action "post/test" 16.29 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.50 ms (2)
+Jul 26 04:51:49 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.71 ms (1)
+Jul 26 04:51:49 symfony [info] {sfWebResponse} Send content (31022 o)
+Jul 26 04:51:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:50 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:50 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:50 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:50 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Configuration 6.67 ms (9)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Factories 22.84 ms (1)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Action "post/test" 11.69 ms (1)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.33 ms (2)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 6.94 ms (1)
+Jul 26 04:51:50 symfony [info] {sfWebResponse} Send content (31054 o)
+Jul 26 04:51:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:50 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:50 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:50 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:50 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Configuration 8.11 ms (9)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Factories 33.86 ms (1)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Action "post/test" 12.26 ms (1)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.37 ms (2)
+Jul 26 04:51:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.20 ms (1)
+Jul 26 04:51:50 symfony [info] {sfWebResponse} Send content (31054 o)
+Jul 26 04:51:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:51 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Configuration 7.29 ms (9)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Factories 18.43 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Action "post/test" 13.10 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.37 ms (2)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.59 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send content (31022 o)
+Jul 26 04:51:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:51 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Configuration 6.64 ms (9)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Factories 90.23 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Action "post/test" 11.92 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.31 ms (2)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.71 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send content (31021 o)
+Jul 26 04:51:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:51 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Configuration 7.69 ms (9)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Factories 102.41 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Action "post/test" 16.26 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.39 ms (2)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.33 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send content (31022 o)
+Jul 26 04:51:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:51 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Configuration 6.35 ms (9)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Factories 25.72 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Action "post/test" 12.34 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.35 ms (2)
+Jul 26 04:51:51 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.72 ms (1)
+Jul 26 04:51:51 symfony [info] {sfWebResponse} Send content (31022 o)
+Jul 26 04:51:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:52 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:52 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:52 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:52 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Configuration 7.78 ms (9)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Factories 23.52 ms (1)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Action "post/test" 10.92 ms (1)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.37 ms (2)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.08 ms (1)
+Jul 26 04:51:52 symfony [info] {sfWebResponse} Send content (31053 o)
+Jul 26 04:51:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:52 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:52 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:52 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:52 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Configuration 6.52 ms (9)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Factories 54.07 ms (1)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Action "post/test" 11.98 ms (1)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+Jul 26 04:51:52 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.47 ms (1)
+Jul 26 04:51:52 symfony [info] {sfWebResponse} Send content (31052 o)
+Jul 26 04:51:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:53 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:53 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:53 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:53 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Configuration 8.90 ms (9)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Factories 67.03 ms (1)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Action "post/test" 12.25 ms (1)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.34 ms (2)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.37 ms (1)
+Jul 26 04:51:53 symfony [info] {sfWebResponse} Send content (31053 o)
+Jul 26 04:51:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:51:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:51:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:51:53 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:51:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 04:51:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.text AS p__text FROM Posts p - ()
+Jul 26 04:51:53 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:51:53 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:53 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:51:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:51:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Configuration 10.20 ms (9)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Factories 74.49 ms (1)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Action "post/test" 16.93 ms (1)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.32 ms (2)
+Jul 26 04:51:53 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.24 ms (1)
+Jul 26 04:51:53 symfony [info] {sfWebResponse} Send content (31053 o)
+Jul 26 04:52:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:40 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:40 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 17 (Object of class sfRoute could not be converted to string)
+Jul 26 04:52:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:41 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:41 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 17 (Object of class sfRoute could not be converted to string)
+Jul 26 04:52:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:42 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:42 symfony [err] {sfWebDebugLogger}  Error at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php on line 17 (Object of class sfRoute could not be converted to string)
+Jul 26 04:52:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:50 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:50 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:52:50 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:50 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:50 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:52:50 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:52:50 symfony [info] {sfWebDebugLogger} Configuration 6.78 ms (9)
+Jul 26 04:52:50 symfony [info] {sfWebDebugLogger} Factories 20.15 ms (1)
+Jul 26 04:52:50 symfony [info] {sfWebDebugLogger} Action "post/test" 18.61 ms (1)
+Jul 26 04:52:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 9.51 ms (1)
+Jul 26 04:52:50 symfony [info] {sfWebResponse} Send content (28443 o)
+Jul 26 04:52:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:51 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:52:51 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:51 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:51 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:52:51 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:52:51 symfony [info] {sfWebDebugLogger} Configuration 4.12 ms (9)
+Jul 26 04:52:51 symfony [info] {sfWebDebugLogger} Factories 12.88 ms (1)
+Jul 26 04:52:51 symfony [info] {sfWebDebugLogger} Action "post/test" 0.66 ms (1)
+Jul 26 04:52:51 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 8.83 ms (1)
+Jul 26 04:52:51 symfony [info] {sfWebResponse} Send content (28410 o)
+Jul 26 04:52:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:58 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:58 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:52:58 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:58 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:58 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:52:58 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:52:58 symfony [info] {sfWebDebugLogger} Configuration 3.61 ms (9)
+Jul 26 04:52:58 symfony [info] {sfWebDebugLogger} Factories 13.49 ms (1)
+Jul 26 04:52:58 symfony [info] {sfWebDebugLogger} Action "post/test" 0.65 ms (1)
+Jul 26 04:52:58 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 6.76 ms (1)
+Jul 26 04:52:58 symfony [info] {sfWebResponse} Send content (28442 o)
+Jul 26 04:52:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:59 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:59 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:52:59 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:59 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:59 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:52:59 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:52:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:52:59 symfony [info] {sfWebDebugLogger} Configuration 3.79 ms (9)
+Jul 26 04:52:59 symfony [info] {sfWebDebugLogger} Factories 268.15 ms (1)
+Jul 26 04:52:59 symfony [info] {sfWebDebugLogger} Action "post/test" 0.65 ms (1)
+Jul 26 04:52:59 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 6.90 ms (1)
+Jul 26 04:52:59 symfony [info] {sfWebResponse} Send content (28411 o)
+Jul 26 04:52:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:52:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:52:59 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:59 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:52:59 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:52:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:52:59 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} Configuration 3.74 ms (9)
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} Factories 50.58 ms (1)
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} Action "post/test" 0.72 ms (1)
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.00 ms (1)
+Jul 26 04:53:00 symfony [info] {sfWebResponse} Send content (28411 o)
+Jul 26 04:53:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:53:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:53:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:53:00 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:53:00 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:53:00 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:53:00 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:53:00 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:53:00 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} Configuration 4.82 ms (9)
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} Factories 21.61 ms (1)
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} Action "post/test" 0.69 ms (1)
+Jul 26 04:53:00 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 6.88 ms (1)
+Jul 26 04:53:00 symfony [info] {sfWebResponse} Send content (28410 o)
+Jul 26 04:53:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:53:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:53:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:53:26 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:53:26 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:53:26 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:53:26 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:53:26 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:53:26 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:53:26 symfony [info] {sfWebDebugLogger} Configuration 4.96 ms (9)
+Jul 26 04:53:26 symfony [info] {sfWebDebugLogger} Factories 18.56 ms (1)
+Jul 26 04:53:26 symfony [info] {sfWebDebugLogger} Action "post/test" 0.32 ms (1)
+Jul 26 04:53:26 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 7.17 ms (1)
+Jul 26 04:53:26 symfony [info] {sfWebResponse} Send content (28442 o)
+Jul 26 04:53:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/test with parameters array (  'module' => 'post',  'action' => 'test',)
+Jul 26 04:53:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 04:53:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 04:53:26 symfony [info] {PostActions} Call "PostActions->executeTest()"
+Jul 26 04:53:26 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\modules/post/templates/testSuccess.php"
+Jul 26 04:53:26 symfony [info] {sfPHPView} Decorate content with "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:53:26 symfony [info] {sfPHPView} Render "D:\OpenServer\domains\polegon\apps\frontend\templates/layout.php"
+Jul 26 04:53:26 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 04:53:27 symfony [warning] {sfWebDebugLogger}  Warning at D:\OpenServer\domains\polegon\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\polegon\apps\frontend\modules\Post\actions\actions.class.php:17))
+Jul 26 04:53:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 04:53:27 symfony [info] {sfWebDebugLogger} Configuration 3.59 ms (9)
+Jul 26 04:53:27 symfony [info] {sfWebDebugLogger} Factories 12.56 ms (1)
+Jul 26 04:53:27 symfony [info] {sfWebDebugLogger} Action "post/test" 0.24 ms (1)
+Jul 26 04:53:27 symfony [info] {sfWebDebugLogger} View "Success" for "post/test" 6.64 ms (1)
+Jul 26 04:53:27 symfony [info] {sfWebResponse} Send content (28410 o)
